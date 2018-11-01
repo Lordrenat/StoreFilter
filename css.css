@@ -11,10 +11,10 @@ body{
 	margin-top: -10px;
 	}
 .wrap {
-	width: 1170px;
+	max-width: 86%;
 	margin: 0 auto;
 	}
-#toph{
+.flex, #log {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -246,10 +246,6 @@ footer {
 	color: #838b9f;
 	margin-top: 50px;
 	}
-.flex {
-	display: flex;
-	justify-content: space-between;
-	}
 #leftf {
 	width: 300px;
 	}
@@ -311,3 +307,49 @@ footer hr {
 #bot {
 	text-align: center;
 	}
+	
+@media (max-width: 600px) {
+  header div {
+	  width: 100%;
+	  }
+ #log, #categ, #search, .theight {
+	 justify-content: center;
+	 margin-bottom: 10px;
+	 }
+ #search input {
+	width: 290px;
+	}
+ nav {
+	 justify-content: center;
+	 }
+ nav a{
+	 font-weight: bold;
+	 width: 50px;
+	 margin-bottom: 9px;
+	 }
+ .filter{
+	 width: 170px;
+	 }
+ #products {
+	 justify-content: center;
+	 }
+ #leftf {
+	 width: 100%;
+	 }
+ #logo2{
+	 width: 100%;
+	 display: flex;
+	 justify-content: center;
+	 }
+ footer table{
+	 margin-top: 30px;
+	 }
+ footer th {
+	text-align: center;
+	}
+footer tr {
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	}
+}
