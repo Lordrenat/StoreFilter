@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css.css" />
+ </head>  
+<body>
+	<header>
+    	<div class="wrap" id="toph">
+        	<div>
+        		<a id="logo" href="#"><img src="images/logo.png"/></a>
+            </div>
+            <div class="theight" id="categ">
+            	<i class="fas fa-question"></i> CATEGORIES
+            </div>
+            <div id="search" class="theight">
+            	<input type="text" name="search" placeholder="Search your course.."/>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="theight">
+            	<a href="#"><i id="mar" class="fas fa-heart fa-lg"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart fa-lg"></i></a>
+            </div>
+            <div class="theight">
+            	<a id="instructor" href="#">BECOME AN INSTRUCTOR</a>
+            </div>
+            <div class="theight">
+            	<a href="#" class="sign">SIGN IN</a>&nbsp;|&nbsp;<a class="sign" href="#">SIGN UP</a>
+            </div>
+            </div>
+          <hr/>
+          
+        <div class="wrap">
+        	<nav>
+            	<a class="active" href="#">HOME</a>
+                <a href="#">EXPLORE</a>
+                <a href="#">COURSE</a>
+                <a href="#">PARTNER</a>
+                <a href="#">EVENT</a>
+                <a href="#">MEMBERSHIP</a>
+                <a href="#">FORUM</a>
+                <a href="#">ELEMENTS</a>
+                <a href="#">PAGES</a>
+            </nav>
+        </div>
+        </div>    
+    </header>
+    
+    
+    <div class="wrap" id="filters">
+    
+    	<div class="flex">
+        	<span><strong>ACTIVE FILTERS</strong></span>
+            <span>RESULT: <strong>980 matches</strong></span>
+        </div>
+        
+        <div id="def">
+        	<span class="act1 def"><i class="far fa-times-circle"></i> Default</span>
+            <span class="def"><i class="far fa-times-circle"></i> Default</span>
+            <span class="def"><i class="far fa-times-circle"></i> Default</span>
+            <span class="def"><i class="far fa-times-circle"></i> Default</span>
+        </div>
+        
+    	<div id="boxes">
+        
+        	<div class="filter" id="topics">
+            	<span>Topics</span> <i class="fas fa-angle-up"></i>
+            </div>
+            <div class="filter"><span>Skill level</span> <i class="fas fa-angle-up"></i></div>
+            <div class="filter"><span>Course languages</span> <i class="fas fa-angle-up"></i></div>
+            <div class="filter"><span>Duration</span> <i class="fas fa-angle-up"></i></div>
+            <div class="filter"><span>Feature</span> <i class="fas fa-angle-up"></i></div>
+            <div class="filter"><span>Collaboration</span> <i class="fas fa-angle-up"></i></div>
+            
+            <div id="check">
+                	<h3>Topics</h3>
+                	<ul>
+                    	<li class="flex">
+                        	<span class="chktext"><input type="checkbox" id="chkbox1" class="chkbox"/> Programming</span> <span class="chknumber">4</span>
+                        </li>
+                        <li class="flex">
+                        	<span class="chktext"><input type="checkbox" id="chkbox2" class="chkbox"/> Design</span> <span class="chknumber">4</span>
+                        </li>
+                        <li class="flex">
+                        	<span class="chktext"><input type="checkbox" id="chkbox3" class="chkbox"/> Web development</span> <span class="chknumber">4</span>
+                        </li>
+                        <li class="flex">
+                        	<span class="chktext"><input type="checkbox" id="chkbox4" class="chkbox"/> Mobile App</span> <span class="chknumber">4</span>
+                        </li>
+                        <li class="flex">
+                        	<span class="chktext"><input type="checkbox" id="chkbox5" class="chkbox"/> Proccess</span> <span class="chknumber">4</span>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    
+    
+    <div class="wrap flex" id="bar">
+		<a href="#">Course</a>
+        <div>
+        	Sort by:
+            <select>
+            	<option>None</option>
+                <option>Name</option>
+                <option>Date</option>
+                <option>Price</option>
+                <option>Anyhow</option>
+            </select>
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-th act2"></i>
+        </div>
+    </div>
+    
+    <div class="wrap flex" id="products">
+    
+    	<div class="products programming">
+        	<img src="images/example1.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products design">
+        	<img src="images/example2.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products web">
+        	<img src="images/example3.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products mobile">
+        	<img src="images/example4.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products process">
+        	<img src="images/example5.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products programming">
+        	<img src="images/example1.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products design">
+        	<img src="images/example2.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products web">
+        	<img src="images/example3.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products mobile">
+        	<img src="images/example4.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products process">
+        	<img src="images/example5.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products programming">
+        	<img src="images/example1.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products design">
+        	<img src="images/example2.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products web">
+        	<img src="images/example3.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products mobile">
+        	<img src="images/example4.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products process">
+        	<img src="images/example5.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products programming">
+        	<img src="images/example1.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products design">
+        	<img src="images/example2.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products web">
+        	<img src="images/example3.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products mobile">
+        	<img src="images/example4.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        <div class="products process">
+        	<img src="images/example5.jpg" />
+            <div class="cover">
+                <div class="seller">BEST SELLER</div>
+                <div class="bundl">BUNDL</div>
+                <h3>Neutal Networks And <br/>
+                For Deep Learning</h3>
+                <div class="face">
+                    <img src="images/face.jpg"/>
+                    Anthony<br/>
+                    Leath
+                </div>
+                <div class="flex like">
+                    <span> <i class="far fa-heart"></i> 349
+                            <i class="far fa-user"></i> 2678
+                    </span>
+                    <span class="price"> $ 100</span>
+                </div>
+             </div>
+        </div>
+        
+        
+        
+        
+
+    </div>
+    
+    <footer>
+    	<div class="wrap">
+        	<div class="flex">
+			<div id="leftf">
+            	<a id="logo2" href="#"><img id src="images/logo2.png"/></a><br/>
+                <span> Education, Inc.<br/>
+                3601 Seneca Street, New York City<br/>
+                NY 10010, USA</span>
+                <div id="sclbtn">
+                	<button class="circle"><i class="fab fa-linkedin-in"></i></button>
+                    <button class="circle"><i class="fab fa-facebook-f"></i></button>
+                    <button class="circle"><i class="fab fa-twitter"></i></button>
+                    <button class="circle"><i class="fab fa-google-plus-g"></i></button>
+                    <button class="circle"><i class="fab fa-youtube"></i></button>
+                    <button class="circle"><i class="fab fa-pinterest-p"></i></button>
+                </div>
+            </div>
+            
+<table border="0">
+  <tr>
+    <th class="thw">System</th>
+    <th class="thw">More</th>
+    <th id="thn">Get in touch</th>
+  </tr>
+  <tr>
+    <td><a class="tbllink" href="#">Help center</a></td>
+    <td><a class="tbllink" href="#">About us</a></td>
+    <td rowspan="2">Contact us if you need help with anything</td>
+  </tr>
+  <tr>
+    <td><a class="tbllink" href="#">Support forum</a></td>
+    <td><a class="tbllink" href="#">Blog</a></td>
+    </tr>
+  <tr>
+    <td><a class="tbllink" href="#">Affiliate</a></td>
+    <td><a class="tbllink" href="#">Service</a></td>
+    <td rowspan="3"><p class="telef">(+01) 2675 286897</p>
+      <p class="telef">(+01) 2120 286473</p>
+      <p class="telef">help@rubikthemes.com</p></td>
+  </tr>
+  <tr>
+    <td><a class="tbllink" href="#">Explore</a></td>
+    <td><a class="tbllink" href="#">Sign in</a></td>
+    </tr>
+  <tr>
+    <td><a class="tbllink" href="#">Pricing</a></td>
+    <td><a class="tbllink" href="#">Sign up</a></td>
+    </tr>
+</table>
+        </div>
+        <hr/>
+        <div id="bot">
+        	@2018 RUBIKTHEMES, ALL RIGHT<br/>
+            RESERVED
+        </div>
+    </footer>
+</body>
+</html>
